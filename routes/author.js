@@ -9,7 +9,7 @@ const multer = require('multer');
 filename= '';
 
 const mystorage = multer.diskStorage({
-    destination : 'https://github.com/mohamed-chaouch/blogMohamed/tree/master/uploads',
+    destination : './uploads',
     filename: (req , file , redirect)=>{
         let date = Date.now();
         let fl = date + '.' + file.mimetype.split('/')[1];
